@@ -1,9 +1,9 @@
-import { FC, PropsWithChildren } from "react";
-import { Provider } from "react-redux";
-import { store } from "./conf";
+import { Provider } from "react-redux"
+import { store } from "./conf"
+import type { PropsWithChildren } from "react"
 
-export const ReduxProvider: FC<PropsWithChildren> = ({ children }) => {
-  return <Provider store={store}>
-    {children}
-  </Provider>
+export const ReduxProvider = ({ children }: PropsWithChildren) => {
+  return (
+    <Provider store={store} children={children} />
+  )
 }

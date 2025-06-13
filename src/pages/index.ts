@@ -1,2 +1,1 @@
-export * from './home'
-export * from './profile'
+export { Home } from './home';
