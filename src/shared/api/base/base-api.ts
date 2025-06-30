@@ -9,6 +9,7 @@ export const API = createApi({
     // api url
     baseUrl: apiUrl,
 
+    // if your application works with jwt
     // add authorization token
     prepareHeaders: (headers) => {
       const authorizationToken: string | null = getCookie("your_authorization_token__cookie_name");
