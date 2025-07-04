@@ -1,33 +1,5 @@
 @import "tailwindcss";
 
-:root, .light, .light-theme {
-  --red-1: #fffcfc;
-  --red-2: #fff7f7;
-  --red-3: #ffe9e9;
-  --red-4: #ffd9db;
-  --red-5: #ffcbcd;
-  --red-6: #ffbabd;
-  --red-7: #fca6aa;
-  --red-8: #f48a91;
-  --red-9: #ff2057;
-  --red-10: #f1004b;
-  --red-11: #d9003d;
-  --red-12: #6e001e;
-
-  --red-a1: #ff000003;
-  --red-a2: #ff000008;
-  --red-a3: #ff000016;
-  --red-a4: #ff000e26;
-  --red-a5: #ff000a34;
-  --red-a6: #ff000c45;
-  --red-a7: #f7000c59;
-  --red-a8: #e8001075;
-  --red-a9: #ff003fdf;
-  --red-a10: #f1004b;
-  --red-a11: #d9003d;
-  --red-a12: #6e001e;
-}
-
 @layer base {
   :root {
     --background: oklch(100% 0.00011 271.152);
