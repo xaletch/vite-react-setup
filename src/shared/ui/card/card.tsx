@@ -6,7 +6,7 @@ export type ReactDiveAttributer = React.HTMLAttributes<HTMLElement>;
 const Card = React.forwardRef<HTMLDivElement, ReactDiveAttributer>(({ className, ...props }, ref) => (
   <div 
     ref={ref}
-    className={cn("bg-gray-200 rounded-3xl px-6 py-4", className)}
+    className={cn("bg-card border border-border rounded-xl px-4 py-4", className)}
     {...props}
   />
 ));

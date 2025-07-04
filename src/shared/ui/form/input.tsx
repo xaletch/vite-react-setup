@@ -9,7 +9,8 @@ const inputVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-gray-100',
+        default: 'bg-card border border-border',
+        gray: 'bg-gray-100',
         white: 'bg-white',
         error: 'bg-red-50 shadow-[0_0_0_1px_#FF4747]',
         success: 'bg-green-50 shadow-[0_0_0_1px_#00B87C]',

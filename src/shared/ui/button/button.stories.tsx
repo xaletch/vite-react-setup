@@ -23,6 +23,13 @@ export const Indigo: Story = {
   }
 };
 
+export const Lime: Story = {
+  args: {
+    children: 'Button',
+    variant: 'lime',
+  }
+};
+
 export const Sm: Story = {
   args: {
     children: 'Button',
