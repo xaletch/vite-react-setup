@@ -1,15 +1,64 @@
 @import "tailwindcss";
 
+:root, .light, .light-theme {
+  --red-1: #fffcfc;
+  --red-2: #fff7f7;
+  --red-3: #ffe9e9;
+  --red-4: #ffd9db;
+  --red-5: #ffcbcd;
+  --red-6: #ffbabd;
+  --red-7: #fca6aa;
+  --red-8: #f48a91;
+  --red-9: #ff2057;
+  --red-10: #f1004b;
+  --red-11: #d9003d;
+  --red-12: #6e001e;
+
+  --red-a1: #ff000003;
+  --red-a2: #ff000008;
+  --red-a3: #ff000016;
+  --red-a4: #ff000e26;
+  --red-a5: #ff000a34;
+  --red-a6: #ff000c45;
+  --red-a7: #f7000c59;
+  --red-a8: #e8001075;
+  --red-a9: #ff003fdf;
+  --red-a10: #f1004b;
+  --red-a11: #d9003d;
+  --red-a12: #6e001e;
+}
+
 @layer base {
+  :root {
+    --background: oklch(100% 0.00011 271.152);
+    --foreground: oklch(24.354% 0.00003 271.152);
+    --card: oklch(100% 0.00011 271.152);
+    --card-foreground: oklch(13.987% 0.04474 4.477);
+    --primary: oklch(49.466% 0.17871 11.472);
+    --primary-foreground: oklch(96.586% 0.01803 0.039);
+    --muted: oklch(96.492% 0.00898 359.427);
+    --muted-foreground: oklch(54.646% 0.05218 1.982);
+    --border: oklch(92.477% 0.01577 2.308);
+  }
+
+  .dark {
+    --background: oklch(6.581% 0.02886 338.017);
+    --foreground: oklch(94.912% 0.00011 271.152);
+    --card: oklch(12.5% 0.01 340);
+    --card-foreground: oklch(94.912% 0.00011 271.152);
+    --primary: oklch(49.466% 0.17871 11.472);
+    --primary-foreground: oklch(12.284% 0.00975 359.749);
+    --muted: oklch(20% 0.02 260);
+    --muted-foreground: oklch(74.439% 0.03677 0.02);
+    --border: oklch(17.839% 0.01242 359.392);
+  }
+
   body {
     height: 100vh;
-    color: var(--color-gray-950);
-    background-color: var(--color-white);
-    font-size: 16px;
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: var(--font-mono);
     font-weight: 400;
-    overflow-x: hidden;
-    /* scroll-behavior: smooth; */
   }
   #root {
     height: 100%;
@@ -29,19 +78,20 @@
 }
 
 @theme {
-  --font-display: "your_font", "sans-serif";
+  --font-family-display: Poppins, sans-serif; 
 
   /* breakpoints */
   --breakpoint-3xl: 120rem;
 
   /* colors */
-  --color-your: #baeabd
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
 
   /* ... */
-}
-
-@theme extend {
-  --font-family-display: Poppins, sans-serif; 
 }
 
 /* your custom utilities */

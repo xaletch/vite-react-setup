@@ -40,7 +40,6 @@ const ALayoutHomeIndexRoute = ALayoutHomeIndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/login': typeof LoginLazyRoute
   '/register': typeof RegisterLazyRoute
-  '': typeof ALayoutRouteWithChildren
   '/': typeof ALayoutHomeIndexRoute
 }
 export interface FileRoutesByTo {
@@ -57,7 +56,7 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/login' | '/register' | '' | '/'
+  fullPaths: '/login' | '/register' | '/'
   fileRoutesByTo: FileRoutesByTo
   to: '/login' | '/register' | '/'
   id: '__root__' | '/login' | '/register' | '/_a/_layout' | '/_a/_layout/_home/'
