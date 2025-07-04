@@ -6,7 +6,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 
 type FormInputVariant = "default" | "white" | "error" | "success";
 
-const FormPreview = ({ inputVariant = "default" }: { inputVariant?: FormInputVariant }) => {
+const FormPreview = ({ inputVariant = "default", loading = false }: { inputVariant?: FormInputVariant, loading?: boolean }) => {
   return (
     <div className="flex items-center justify-center h-screen">
       <Form
@@ -29,7 +29,7 @@ const FormPreview = ({ inputVariant = "default" }: { inputVariant?: FormInputVar
               required
             />
             <div>
-              <Button type="submit">Submit</Button>
+              <Button type="submit" isLoading={loading} disabled={loading}>Submit</Button>
             </div>
           </>
         )}
@@ -54,4 +54,8 @@ export const Error: Story = {
 
 export const Success: Story = {
   render: () => <FormPreview inputVariant="success" />,
+};
+
+export const Loading: Story = {
+  render: () => <FormPreview loading={true} />,
 };
