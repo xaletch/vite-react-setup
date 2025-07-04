@@ -4,25 +4,25 @@
   :root {
     --background: oklch(100% 0.00011 271.152);
     --foreground: oklch(24.354% 0.00003 271.152);
-    --card: oklch(100% 0.00011 271.152);
+    --card: oklch(0% 0 0 / 0.024);
     --card-foreground: oklch(13.987% 0.04474 4.477);
     --primary: oklch(49.466% 0.17871 11.472);
     --primary-foreground: oklch(96.586% 0.01803 0.039);
     --muted: oklch(96.492% 0.00898 359.427);
     --muted-foreground: oklch(54.646% 0.05218 1.982);
-    --border: oklch(92.477% 0.01577 2.308);
+    --border: oklch(24.354% 0.00003 271.152 / 0.09);
   }
 
   .dark {
     --background: oklch(6.581% 0.02886 338.017);
     --foreground: oklch(94.912% 0.00011 271.152);
-    --card: oklch(12.5% 0.01 340);
+    --card: oklch(97.046% 0.04488 156.415 / 0.082);
     --card-foreground: oklch(94.912% 0.00011 271.152);
     --primary: oklch(49.466% 0.17871 11.472);
     --primary-foreground: oklch(12.284% 0.00975 359.749);
     --muted: oklch(20% 0.02 260);
     --muted-foreground: oklch(74.439% 0.03677 0.02);
-    --border: oklch(17.839% 0.01242 359.392);
+    --border: oklch(94.912% 0.00011 271.152 / 0.09);
   }
 
   body {

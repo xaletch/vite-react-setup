@@ -13,12 +13,14 @@ const buttonVariants = cva(
         lime: 'bg-lime-400 text-teal-900 hover:bg-lime-300 active:bg-lime-400 disabled:hover:bg-lime-400 disabled:active:bg-lime-400',
         indigo: 'bg-indigo-500 text-white shadow hover:bg-indigo-400 active:bg-indigo-500 disabled:hover:bg-indigo-500 disabled:active:bg-indigo-500',
         link: 'text-primary underline-offset-4 hover:underline disabled:hover:no-underline',
+        amber: 'bg-amber-100 text-white hover:bg-amber-200 active:bg-amber-300 disabled:hover:bg-amber-100 disabled:active:bg-amber-100',
       },
       size: {
         default: 'w-full h-12.5 px-4 py-2',
         sm: 'h-8 rounded-md px-3 text-xs',
         lg: 'h-10 rounded-md px-8',
         icon: 'size-9',
+        iconSm: 'size-8',
       },
     },
     defaultVariants: {

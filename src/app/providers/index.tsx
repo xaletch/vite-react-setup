@@ -13,5 +13,3 @@ export const Provider = ({ children }: PropsWithChildren) => {
     </ReduxProvider>
   )
 }
-
-// F5C71A
